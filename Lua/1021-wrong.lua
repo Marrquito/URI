@@ -25,5 +25,5 @@ print(math.floor(valor / 0.10) .. ' moeda(s) de R$ 0.10')
 valor = valor % 0.10
 print(math.floor(valor / 0.05).. ' moeda(s) de R$ 0.05')
 valor = valor % 0.05
-print(math.floor( valor / 0.01)+1 .. ' moeda(s) de R$ 0.01')
+print(math.floor( valor / 0.01) .. ' moeda(s) de R$ 0.01')
 valor = valor % 0.0
