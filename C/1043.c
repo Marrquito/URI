@@ -1,13 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int a, b, c, a1, b1, c1, cobaia;
+    float a, b, c, cobaia, x;
 
-    scanf("%d %d %d", &a, &b, &c);
-
-    a1 = a;
-    b1 = b;
-    c1 = c;
+    scanf("%f %f %f", &a, &b, &c);
 
     if(a < b){
         cobaia = a;
@@ -25,8 +21,14 @@ int main(){
         c = cobaia;
     }
 
-    printf("%d\n%d\n%d\n\n", c, b, a);
-    printf("%d\n%d\n%d\n", a1, b1, c1);
-    
+    if(a >= (b + c)){
+        x = ((a + b)*c) / 2;
+        printf("Area = %.1f\n", x);
+    }else{
+        x = a + b + c;
+        printf("Perimetro = %.1f\n", x);
+    }
+
+
     return 0;
 }
